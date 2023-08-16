@@ -21,7 +21,7 @@ function App() {
   };
 
   const getPopularMovies = async (page) => {
-    const url = `https://api.themoviedb.org/3/movie/popular?api_key=154227dcf1185e5abdfc7a0c9970913a&language=ar&page=${page}`;
+    const url = `//api.themoviedb.org/3/movie/popular?api_key=154227dcf1185e5abdfc7a0c9970913a&language=ar&page=${page}`;
     fetchMovies(url);
   };
 
@@ -29,7 +29,7 @@ function App() {
     if (word === "") {
       getPopularMovies(1); // Fetch the first page of popular movies
     } else {
-      const url = `https://api.themoviedb.org/3/search/movie?api_key=154227dcf1185e5abdfc7a0c9970913a&query=${word}&language=ar`;
+      const url = `//api.themoviedb.org/3/search/movie?api_key=154227dcf1185e5abdfc7a0c9970913a&query=${word}&language=ar`;
       fetchMovies(url);
     }
   };
@@ -43,7 +43,6 @@ function App() {
       <NavBar search={searchMovies} />
       <Container>
         <BrowserRouter basename="/Movie_app">
-          {/* Use the basename of your repository */}
           <Routes>
             <Route
               path="/"
