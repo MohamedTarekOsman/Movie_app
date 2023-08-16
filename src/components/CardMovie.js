@@ -8,7 +8,7 @@ export default function CardMovie({mov}) {
     <Col xs="6" sm="8" md="4" lg="3" className='my-1'>
        <Link to={`/movie/${mov.id}`}>
       <div className='card'>
-          <img src={`https://image.tmdb.org/t/p/w500/${mov.poster_path}`} className='card_image' alt='product'/>
+          <img src={`//image.tmdb.org/t/p/w500/${mov.poster_path}`} className='card_image' alt='product'/>
           <div className='card_overlay'>
             <div className='overlay_text text-center w-100 p-2'>
                 <p>اسم الفيلم : {mov.original_title}</p>

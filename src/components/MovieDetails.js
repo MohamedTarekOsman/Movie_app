@@ -7,10 +7,10 @@ export default function MovieDetails() {
   const [movie, setMovie] = useState([])
   
   const getMovieDetails = async () => {
-      const res = await axios.get(`https://api.themoviedb.org/3/movie/${param.id}?api_key=154227dcf1185e5abdfc7a0c9970913a&language=ar`)
+      const res = await axios.get(`//api.themoviedb.org/3/movie/${param.id}?api_key=154227dcf1185e5abdfc7a0c9970913a&language=ar`)
       setMovie(res.data)
   }
-  let movielive='https://www.imdb.com/title/'+movie.imdb_id
+  let movielive='//www.imdb.com/title/'+movie.imdb_id
   useEffect(() => {
       getMovieDetails();
   }, [])
@@ -21,7 +21,7 @@ export default function MovieDetails() {
                   <div className="card-detalis  d-flex align-items-center ">
                       <img
                           className="img-movie w-30"
-                          src={`https://image.tmdb.org/t/p/w500/` + movie.poster_path}
+                          src={`//image.tmdb.org/t/p/w500/` + movie.poster_path}
                           alt="ascad"
                       />
                       <div className="justify-content-center text-center  mx-auto">
