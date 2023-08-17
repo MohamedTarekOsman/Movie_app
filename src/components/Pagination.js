@@ -13,7 +13,7 @@ export default function PaginationComponent({getPage,pagesCount}) {
         nextLabel="التالي"
         onPageChange={handelPageClick}
         pageRangeDisplayed={2}
-        marginPagesDisplayed={2}
+        marginPagesDisplayed={0}
         pageCount={pagesCount}
         previousLabel="السابق"
         containerClassName='pagination justify-content-center'
